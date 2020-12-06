@@ -4,3 +4,60 @@
   box-sizing: border-box;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
+
+:root {
+  --menu-color: #0020ff; /* complementary to yellow background in image */
+  --pop-out-color: #333333;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden visible;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 80vw;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+article {
+  display: flex;
+  flex-direction: column;
+  width: 70vw;
+  align-items: center;
+  padding: 5vw 7vw;
+}
+.article-title {
+  align-self: flex-start;
+  font-weight: bolder;
+}
+.article-author {
+  align-self: flex-start;
+  font-style: italic;
+  margin-bottom: .5em;
+}
+.article-text {
+  align-self: flex-start;
+  margin: .5em 0;
+}
+.image-title {
+  font-weight: bold;
+  align-self: flex-start;
+  margin: .5em 0;
+}
+img {
+  width: 100%;
+  margin: .5em 0 .7em;
+}
+
+.article-date {
+  font-style: italic;
+  align-self: flex-end;
+}
