@@ -2,7 +2,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 :root {
@@ -11,6 +10,7 @@
 }
 
 body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -31,7 +31,6 @@ nav {
   width: 100%;
   position: relative;
 }
-
 .menu-shape {
   width: 20em;
   height: 20em;
@@ -41,14 +40,19 @@ nav {
   top: -10em;
   left: -10em;
 }
+#hamburger-menu-icon {
+  position: relative;
+  width: 40px;
+  margin: 2.8em 2em;
+  z-index: 2;
+}
 
 article {
   display: flex;
   flex-direction: column;
   width: 70vw;
   align-items: center;
-  margin-top: 10em;
-
+  margin-top: 5em;
 }
 .article-title {
   align-self: flex-start;
@@ -68,11 +72,10 @@ article {
   align-self: flex-start;
   margin: .5em 0;
 }
-img {
+#my-friend {
   width: 100%;
   margin: .5em 0 .7em;
 }
-
 .article-date {
   font-style: italic;
   align-self: flex-end;
