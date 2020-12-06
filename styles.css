@@ -19,12 +19,27 @@ body {
 }
 
 .container {
+  width: 100vw;
   display: flex;
   flex-direction: column;
-  width: 80vw;
   align-items: center;
   justify-content: center;
   overflow: hidden;
+}
+
+nav {
+  width: 100%;
+  position: relative;
+}
+
+.menu-shape {
+  width: 20em;
+  height: 20em;
+  border-radius: 50%;
+  background-color: var(--menu-color);
+  position: absolute;
+  top: -10em;
+  left: -10em;
 }
 
 article {
@@ -32,7 +47,8 @@ article {
   flex-direction: column;
   width: 70vw;
   align-items: center;
-  padding: 5vw 7vw;
+  margin-top: 10em;
+
 }
 .article-title {
   align-self: flex-start;
