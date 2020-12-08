@@ -9,9 +9,10 @@
 </head>
 <body>
   <div class="container">
-    
+
+    <!-- I need three layers, so I am using three divs - top-menu, article, and under-menu -->
     <nav id="top-menu">
-      <div class="menu-shape"></div>
+      <div class="top-menu-shape"></div>
       <div class="icon in-circle">
         <i class="fas fa-bars"></i>
       </div>
@@ -20,7 +21,7 @@
       </div>
     </nav> <!-- end top-menu -->
 
-    <article>
+    <article class="">
       <h1 class="article-title">Best Friends</h1>
       <p class="article-author">written by Terri Fricker</p>
       <p class="article-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rem, eveniet eum, libero necessitatibus autem vero expedita deserunt omnis, sunt eius totam voluptas. Nemo hic accusamus, nulla modi aperiam sed iure? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Blanditiis perferendis officiis voluptatum! Repudiandae unde obcaecati, beatae tempore fugit molestias saepe iusto, possimus odit nisi fugiat natus alias eos ea accusamus.</p>
@@ -30,22 +31,25 @@
         bright yellow background">
       <p class="article-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium tempora animi ducimus, quos facere eum et dolorum sequi! Voluptatibus voluptatum aliquid explicabo. Delectus et pariatur soluta mollitia. Ea, adipisci cum?</p>
       <p class="article-date">December 5, 2020</p>
+      <!-- no need for z-index - each of the article elements will be on the same layer as the article itself -->
     </article> <!-- end article -->
 
     <nav id="under-menu">
-      <div class="icon menu-icon">
+      <div class="icon under-menu-icon">
         <i class="fas fa-home"></i>
         Home
       </div>
-      <div class="icon menu-icon">
+      <div class="icon under-menu-icon">
         <i class="fas fa-user"></i>
         About Us
       </div>
-      <div class="icon menu-icon">
+      <div class="icon under-menu-icon">
         <i class="fas fa-envelope"></i>
         Contact
       </div>
+      <!-- no need for z-index - each of the under-menu elements will be on the same layer as the under-menu itself -->
     </nav> <!-- end under-menu -->
+
   </div> <!-- end container -->
   <script src="https://kit.fontawesome.com/d965fe350f.js" crossorigin="anonymous"></script>
   <script src="script.js"></script>

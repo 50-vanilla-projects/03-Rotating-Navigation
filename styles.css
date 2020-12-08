@@ -3,12 +3,10 @@
   padding: 0;
   box-sizing: border-box;
 }
-
 :root {
   --top-menu-color: #0020ff; /* complementary to yellow background in image */
   --under-menu-color: #333333;
 }
-
 body {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   display: flex;
@@ -17,23 +15,37 @@ body {
   justify-content: center;
   overflow: hidden visible;
 }
-
 .container {
   width: 100vw;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  overflow: hidden;
-  background-color: chartreuse;
-  z-index: -10;
 }
 
-nav {
+#top-menu {
+  z-index: 3;
+}
+article {
+  z-index: 2;
+}
+#under-menu {
+  z-index: 1;
+}
+
+.hidden {
+  visibility: hidden;
+}
+.icon {
+  width: 40px;
+}
+
+#top-menu {
   width: 100%;
   position: relative;
+
 }
-.menu-shape {
+.top-menu-shape {
   width: 20em;
   height: 20em;
   border-radius: 50%;
@@ -41,41 +53,22 @@ nav {
   position: absolute;
   top: -10em;
   left: -10em;
-  z-index: 2;
+  z-index: 1; /* bottom layer of top-menu */
 }
-.hidden {
-  visibility: hidden;
-}
-.icon {
-  width: 40px;
-}
+
 .in-circle {
   margin: 2.5em;
-  z-index: 3;
+  position: relative;
+  z-index: 2; /* top layer of top-menu */
 }
-.under-menu {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
-  position: absolute;
-  top: 0;
-  left: 0;
-  background-color: var(--under-menu-color);
-  visibility: hidden;
-  z-index: -1;
-}
-.menu-icon {
-  color: white;
-  visibility: inherit;
-}
+
 article {
   display: flex;
   flex-direction: column;
   width: 70vw;
   align-items: center;
   margin-top: 5em;
-  z-index: 1;
+  background-color: chartreuse;
 }
 .article-title {
   align-self: flex-start;
@@ -103,3 +96,22 @@ article {
   font-style: italic;
   align-self: flex-end;
 }
+
+
+
+#under-menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  position: absolute;
+  top: 300px;
+  left: 600px;
+  background-color: var(--under-menu-color);
+  z-index: 1;  /* bottom layer of container */
+}
+.under-menu-icon {
+  color: white;
+}
+
+
