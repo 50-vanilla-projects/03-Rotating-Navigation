@@ -25,6 +25,8 @@ body {
   align-items: center;
   justify-content: center;
   overflow: hidden;
+  background-color: chartreuse;
+  z-index: -10;
 }
 
 nav {
@@ -39,20 +41,41 @@ nav {
   position: absolute;
   top: -10em;
   left: -10em;
-}
-#hamburger-menu-icon {
-  position: relative;
-  width: 40px;
-  margin: 2.8em 2em;
   z-index: 2;
 }
-
+.hidden {
+  visibility: hidden;
+}
+.icon {
+  width: 40px;
+}
+.in-circle {
+  margin: 2.5em;
+  z-index: 3;
+}
+.pop-out-menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: var(--pop-out-color);
+  visibility: hidden;
+  z-index: -1;
+}
+.menu-icon {
+  color: white;
+  visibility: inherit;
+}
 article {
   display: flex;
   flex-direction: column;
   width: 70vw;
   align-items: center;
   margin-top: 5em;
+  z-index: 1;
 }
 .article-title {
   align-self: flex-start;
