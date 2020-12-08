@@ -5,8 +5,8 @@
 }
 
 :root {
-  --menu-color: #0020ff; /* complementary to yellow background in image */
-  --pop-out-color: #333333;
+  --top-menu-color: #0020ff; /* complementary to yellow background in image */
+  --under-menu-color: #333333;
 }
 
 body {
@@ -37,7 +37,7 @@ nav {
   width: 20em;
   height: 20em;
   border-radius: 50%;
-  background-color: var(--menu-color);
+  background-color: var(--top-menu-color);
   position: absolute;
   top: -10em;
   left: -10em;
@@ -53,7 +53,7 @@ nav {
   margin: 2.5em;
   z-index: 3;
 }
-.pop-out-menu {
+.under-menu {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -61,7 +61,7 @@ nav {
   position: absolute;
   top: 0;
   left: 0;
-  background-color: var(--pop-out-color);
+  background-color: var(--under-menu-color);
   visibility: hidden;
   z-index: -1;
 }
