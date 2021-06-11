@@ -98,9 +98,11 @@ article {
 
 
 #under-menu {
+  width: 75vw;
+  height: 85vh;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-end;
   align-items: flex-start;
   position: absolute;
   bottom: 0;
@@ -109,6 +111,7 @@ article {
   z-index: 1;  /* bottom layer of container */
 }
 .under-menu-icon {
+  font-size: 2rem;
   color: white;
 }
 
