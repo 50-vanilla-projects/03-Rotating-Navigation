@@ -67,7 +67,7 @@ article {
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
-  transition: all 1s;
+  transition: all 1s ease-in-out;
   background-color: white;
 }
 .rotate-20 {
